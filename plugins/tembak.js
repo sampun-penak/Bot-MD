@@ -126,7 +126,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
         m.chat,
         `Selamat anda resmi berpacaran dengan @${
           user.split("@")[0]
-        }\n\nSemoga langgeng dan bahagia selalu `,
+        }\n\nSemoga langgeng dan bahagia selalu😼`,
         m,
         {
           contextInfo: {

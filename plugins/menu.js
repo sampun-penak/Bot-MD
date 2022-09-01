@@ -5,56 +5,65 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 let levelling = require('../lib/levelling')
 let tags = {
-  'rpgabsen': 'Rpg-Absen',
-  'rpg': 'Rpg',
-  'game': 'Game',
-  'xp': 'Exp, Limit & Pay',
-  'sticker': 'Sticker',
-  'main': 'Main',
-  'kerang': 'Kerang Ajaib',
-  'quotes': 'Quotes',
-  'admin': 'Admin',
-  'group': 'Group',
-  'internet': 'Internet',
-  'anonymous': 'Anonymous Chat',
-  'downloader': 'Downloader',
-  'berita': 'Berita',
-  'tools': 'Tools',
-  'fun': 'Fun',
-  'database': 'Database', 
-  'vote': 'Voting',
-  'absen': 'Absen',
-  'catatan': 'Catatan',
-  'jadian': 'Jadian',
-  'islami': 'Islami',
-  'owner': 'Owner',
-  'advanced': 'Advanced',
-  'info': 'Info',
-  'audio': 'Audio',
-  'maker': 'Maker',
+  'rpgabsen': '🧊 𝗠𝗘𝗡𝗨 𝗥𝗣𝗚-𝗔𝗕𝗦𝗘𝗡 🧊',
+  'rpg': '🎲 𝗠𝗘𝗡𝗨 𝗥𝗣𝗚 🎲',
+  'game': '🎮 𝗠𝗘𝗡𝗨 𝗚𝗔𝗠𝗘 🎮',
+  'xp': '🎨️ 𝗠𝗘𝗡𝗨 𝗘𝗫𝗣, 𝗟𝗜𝗠𝗜𝗧, 𝗣𝗔𝗬 🎨️',
+  'sticker': '🪀 𝗠𝗘𝗡𝗨 𝗦𝗧𝗜𝗖𝗞𝗘𝗥 🪀',
+  'main': '‍🎹 𝗠𝗘𝗡𝗨 𝗠𝗔𝗜𝗡 ‍🎹',
+  'kerang': '☕ 𝗠𝗘𝗡𝗨 𝗞𝗘𝗥𝗔𝗡𝗚 𝗔𝗝𝗔𝗜𝗕 ☕',
+  'quotes': '🌠 𝗠𝗘𝗡𝗨 𝗤𝗨𝗢𝗧𝗘𝗦 🌌',
+  'admin': '🚢️ 𝗠𝗘𝗡𝗨 𝗔𝗗𝗠𝗜𝗡 🚢',
+  'group': '🚀 𝗠𝗘𝗡𝗨 𝗚𝗥𝗢𝗨𝗣 🚀',
+  'internet': '🔍 𝗠𝗘𝗡𝗨 𝗜𝗡𝗧𝗘𝗥𝗡𝗘𝗧 🔍',
+  'anonymous': '🕹 𝗠𝗘𝗡𝗨 𝗔𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 🕹',
+  'downloader': '📥 𝗠𝗘𝗡𝗨 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 📥',
+  'berita': '🧾 𝗠𝗘𝗡𝗨 𝗕𝗘𝗥𝗜𝗧𝗔 🧾',
+  'tools': '📚 𝗠𝗘𝗡𝗨 𝗧𝗢𝗢𝗟𝗦 📚',
+  'fun': '📮 𝗠𝗘𝗡𝗨 𝗙𝗨𝗡 📮',
+  'database': '🗂 𝗠𝗘𝗡𝗨 𝗗𝗔𝗧𝗔𝗕𝗔𝗦𝗘 🗂', 
+  'vote': '📯️ 𝗠𝗘𝗡𝗨 𝗩𝗢𝗢𝗧𝗜𝗡𝗚 📯️',
+  'absen': '🏷 𝗠𝗘𝗡𝗨 𝗔𝗕𝗦𝗘𝗡 🏷',
+  'catatan': '📝 𝗠𝗘𝗡𝗨 𝗖𝗔𝗧𝗔𝗧𝗔𝗡 📝',
+  'jadian': '👫 𝗠𝗘𝗡𝗨 𝗝𝗔𝗗𝗜𝗔𝗡 👫',
+  'islami': '🕋 𝗠𝗘𝗡𝗨 𝗜𝗦𝗟𝗔𝗠𝗜 🕋',
+  'owner': '🔱 𝗠𝗘𝗡𝗨 𝗢𝗪𝗡𝗘𝗥 🔱',
+  'advanced': '🎉 𝗠𝗘𝗡𝗨 𝗔𝗗𝗩𝗔𝗡𝗖𝗘𝗗 🎉️',
+  'info': '⚠️ 𝗠𝗘𝗡𝗨 𝗜𝗡𝗙𝗢 ⚠️',
+  'audio': '🎙 𝗠𝗘𝗡𝗨 𝗔𝗨𝗗𝗢 🎙',
+  'maker': '🎥 𝗠𝗘𝗡𝗨 𝗠𝗔𝗞𝗘𝗥 🎥',
 }
 const defaultMenu = {
   before: `
-Hai, %ucapan %name! 👋
+𝐇𝐀𝐈, %ucapan %name! 👋
   
-*Waktu:* 
-%wib WIB
-%wita WITA
-%wit WIT
-*Hari:* %week
-*Tanggal:* %date
-*Uptime:* %uptime (%muptime)
+⏲️ 𝐖𝐀𝐊𝐓𝐔
+🕐 %wib 𝐖𝐈𝐁
+🕑 %wita 𝐖𝐈𝐓𝐀
+🕒 %wit 𝐖𝐈𝐓
 
-*OneTXz Ganteng*
+🎉 𝐉𝐎𝐈𝐍 𝐆𝐑𝐎𝐔𝐏 🎉
+*https://chat.whatsapp.com/EJik1WvMpxeCoCEGAFRqiV*
 
-*Limit:* %limit
-*Level:* %level
-*XP:* %exp
+🌤 𝐇𝐀𝐑𝐈 : %week
+🗓 𝐓𝐀𝐍𝐆𝐆𝐀𝐋 : %date
+📊 𝐔𝐏𝐓𝐈𝐌𝐄 %uptime
+
+⏳ 𝐅𝐎𝐋𝐋𝐎𝐖 𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌 ⏳
+*https://instagram.com/sampun_penak*
+
+🌹 𝐋𝐈𝐌𝐈𝐓 : %limit
+🚀 𝐋𝐄𝐕𝐄𝐋 : %level
+📮 𝐄𝐗𝐏 : %exp
+
+🏷 𝐇𝐀𝐋𝐀𝐌𝐀𝐍 𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 🏷
+*https://facebook.com/sampun.penak*
+
 %readmore`.trimStart(),
   header: ' *%category*',
   body: ' • %cmd %islimit %isPremium',
   footer: '\n',
-  after: `*Made by ♡*
+  after: `*𝐁𝐨𝐭 𝐁𝐲 𝐓𝐡𝐞𝐁𝐨𝐭𝐳𝐎𝐟𝐜*
 *%npmname* | %version
 ${'```%npmdesc```'}
 `,
@@ -159,10 +168,10 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://instagram.com/onetxz', 'INSTAGRAM', '', '', [
-      ['Donate', '/donasi'],
-      ['Sewa Bot', '/sewa'],
-      ['Owner', '/owner']
+    conn.sendHydrated(m.chat, text.trim(), '© ＴｈｅＢｏｔｚ  Ｏｆｆｉｃｉａｌ', null, 'https://instagram.com/sampun_penak', '📮 INSTAGRAM 📮', '', '', [
+      ['💰 DONATE 💰', '/donasi'],
+      ['💳 SEWA BOT 💳', '/sewa'],
+      ['🎉 OWNER 🎉', '/owner']
     ], m)
     /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
     let res = await fetch(url)

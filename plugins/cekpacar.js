@@ -32,7 +32,7 @@ let handler = async (m, { conn, text }) => {
   }
 
   if (typeof global.db.data.users[global.db.data.users[user].pasangan] == "undefined" && global.db.data.users[user].pasangan != ""){
-    return m.reply("*Pacar/gebetan target tidak terdaftar di Aine Bot.*")
+    return m.reply("*Pacar/gebetan target tidak terdaftar di The Bot.*")
   }
 
   if (global.db.data.users[user].pasangan == "") {

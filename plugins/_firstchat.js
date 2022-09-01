@@ -3,7 +3,7 @@ let handler = m => m
 
 handler.before = async function (m) {
 
-    if (m.chat.endsWith('broadcast')) return
+    if (m.chat.endsWith('broadcast') || m.key.remoteJid.endsWith('broadcast')) return
     if (m.fromMe) return
     if (m.isGroup) return
    // if (db.data.settings.groupOnly) return
@@ -15,8 +15,8 @@ handler.before = async function (m) {
     await this.sendButton(m.chat, `
 Hai ${ucapan()} *${username.replace(/@.+/, '')}* 👋
 
-${banned ? `kamu *terbanned* kak 😕\nHubungi: wa.me/${owner[0]}` : 'Ada yang bisa saya bantu?'}
-`.trim(), wm, null, [['Menu', '/menu']], m)
+${banned ? `Kamu *Terbanned* Kak 😕\nHubungi: wa.me/${owner[0]}` : 'Ada yang bisa saya bantu?\n\nKlik Tombol Dibawah Untuk Menampilkan Menu'}
+`.trim(), wm, null, [['📮 MENU 📮', '/menu']], m)
     user.pc = new Date * 1
 }
 

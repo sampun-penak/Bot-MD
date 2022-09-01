@@ -15,8 +15,9 @@ handler.before = function (m, { isAdmin, isBotAdmin }) {
       if (global.opts) {
         if (isAdmin || !isBotAdmin){		  
         }else{
-          m.reply('*Sticker detected*\nYou will in kick now..!!') // ganti text terserah kamu 
-          this.groupParticipantsUpdate(m.chat, [m.sender], "remove")
+         // m.reply('*Sticker Terdeteksi*\nMaaf Saya Hapus') // ganti text terserah kamu 
+          this.sendMessage(m.chat, { delete: m.key })
+          // this.groupParticipantsUpdate(m.chat, [m.sender], "remove")
         }return true
       }
     }
@@ -24,4 +25,5 @@ handler.before = function (m, { isAdmin, isBotAdmin }) {
   return true
 }
 
+handler.group = true
 module.exports = handler

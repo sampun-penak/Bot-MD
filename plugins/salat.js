@@ -35,7 +35,7 @@ let axios = require('axios')
 let cheerio = require('cheerio')
 
 let handler = async (m, { text, usedPrefix, command }) => {
-    if (!text) throw `uhm.. kota apa?\n\n${usedPrefix + command} jakarta pusat`
+    if (!text) throw `uhm.. kota apa?\n\n${usedPrefix + command} Demak`
     let lcity = await city().then(res => { return res })
     let c = text.replace(' ', '-').toUpperCase()
     if (!lcity.includes(c)) return m.reply('kota tidak ditemukan!' + readMore + '\n\n' + lcity.map((v, i) => `${i + 1}. ${v}`).join`\n`)

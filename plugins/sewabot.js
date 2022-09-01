@@ -3,7 +3,7 @@ let handler = async (m, { conn }) => {
   let pepe = 'https://telegra.ph/file/2e2eb7d093fec08fd00d4.jpg'
   let baper = await fetch(pepe).then(a => a.buffer())
 
-  let aine = '6289508902582@s.whatsapp.net'
+  let aine = '6283816446896@s.whatsapp.net'
   let a = await conn.profilePictureUrl(conn.user.jid, 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
   let b = await conn.profilePictureUrl(owner[0]+'@s.whatsapp.net', 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
   let c = pickRandom([a, b])
@@ -13,16 +13,16 @@ let handler = async (m, { conn }) => {
   description: ` *• SEWA BOT & UP TO PREMIUM •*
         
 1. Grup / 30 Hari
-Rp. 15.000 Gopay
-Rp. 15.000 Pulsa
+Rp. 20.000 Dana
+Rp. 20.000 Pulsa
 
 2. Premium / 30 Hari
-Rp. 10.000 Gopay
-Rp. 10.000 Pulsa
+Rp. 15.000 Dana
+Rp. 15.000 Pulsa
 
 3. Premium + Grup / 30 Hari
-Rp. 20.000 Gopay
-Rp. 20.000 Pulsa
+Rp. 30.000 Dana
+Rp. 30.000 Pulsa
 
 wa.me/${owner[0]}
 *Bukan Bot!!!*
@@ -33,12 +33,12 @@ wa.me/${owner[0]}
   productListInfo: {
   productSections: [{
   title:'Klik untuk order',
-  products:[{productId:'5348213531903158/6289508902582'}]}],
-  headerImage: { productId: '5348213531903158/6289508902582',
+  products:[{productId:'7993088630761494/6283816446896'}]}],
+  headerImage: { productId: '7993088630761494/6283816446896',
   jpegThumbnail: baper },
-  businessOwnerJid: `6289508902582@s.whatsapp.net`
+  businessOwnerJid: `6283816446896@s.whatsapp.net`
   },
-  footerText: 'https://instagram.com/onetxz',
+  footerText: 'https://instagram.com/sampun_penak',
   }},{})
   conn.relayMessage(prepare.key.remoteJid,prepare.message,{messageId:prepare.key.id})
   const data = global.owner.filter(([id, isCreator]) => id && isCreator)

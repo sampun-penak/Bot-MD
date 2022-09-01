@@ -6,7 +6,7 @@ handler.all = async function (m, { isBlocked }) {
     if (isBlocked) return
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-/* - - - - - - -  autoresponder by onetxz  - - - - - - - */
+/* - - - - - - - Ini autoresponder by mimim - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 let regs = /(aku cinta kamu)/i
@@ -29,7 +29,7 @@ let cintakamuh = cinmu[Math.floor(Math.random() * cinmu.length)]
     }
     
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-/* - - - - - - -  autoresponder by onetxz  - - - - - - - */
+/* - - - - - - - Ini autoresponder by mimim - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
     let regc = /(aku sayang kamu)/i
@@ -52,10 +52,10 @@ let sayangkamuh = saymu[Math.floor(Math.random() * saymu.length)]
     }
     
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-/* - - - - - - -  autoresponder by onetxz  - - - - - - - */
+/* - - - - - - - Ini autoresponder by mimim - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-    let regl = /(I love you|love you|lopyu)/i
+    let regl = /(I love you|love you)/i
     let isLoveYou = regl.exec(m.text)
     let lovou = [
 '❤️',
@@ -76,7 +76,7 @@ let loveyou = lovou[Math.floor(Math.random() * lovou.length)]
     }
     
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-/* - - - - - - -  autoresponder by onetxz  - - - - - - - */
+/* - - - - - - - Ini autoresponder by mimim - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     
     let ass = /(assalamualaikum|assallamualaikum|assalamu\'alaikum|as\'salamualaikum)/i
@@ -100,10 +100,10 @@ let assl = assal[Math.floor(Math.random() * assal.length)]
     }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - */
-/* - - - - - - -  autoresponder by onetxz  - - - - - - - */
+/* - - - - - - - Ini autoresponder by mimim - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     
-   /* let hiai = /(hi|hii|hiii|hi aine|hii aine|hiii reki|hy|halo|hallo|helo|hello|hy reki|halo reki|hallo reki|helo reki|hello reki)/i
+   /* let hiai = /(hi|hii|hiii|hi mimim|hii mimim|hiii mimim|hy|halo|hallo|helo|hello|hy mimim|halo mimim|hallo mimim|helo mimim|hello mimim)/i
     let isAih = hiai.exec(m.text)
     let hiain = [
 '🥰',

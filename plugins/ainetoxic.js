@@ -7,11 +7,11 @@ conn.sendFile(m.chat, ihhomkasar, '', '', m, true)
 setTimeout(() => {
 conn.sendFile(m.chat, gaboleh, '', '', m, true)
 }, 1000)
-//conn.sendMessage(m.chat, helloaine, MessageType.audio, {quoted: m, mimetype: 'audio/mp4', ptt:true})
-// await conn.sendMessage(m.chat, { audio: { url: helloaine }, mimetype: 'audio/mp4'}, m)
+//conn.sendMessage(m.chat, hellomimim, MessageType.audio, {quoted: m, mimetype: 'audio/mp4', ptt:true})
+// await conn.sendMessage(m.chat, { audio: { url: hellomimim }, mimetype: 'audio/mp4'}, m)
 }
 
-handler.customPrefix = /^(asu|asuu|burik|bangsad|kontol|memek|jembut|jancok|ngentod|goblok|tolol)$/i
+handler.customPrefix = /^(kontol|memek|jembut|jancok|ngentod)$/i
 handler.command = new RegExp
 
 handler.limit = true

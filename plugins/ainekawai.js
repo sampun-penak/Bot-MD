@@ -1,7 +1,7 @@
 let fs = require('fs')
 let handler = async (m) => {
-let helloaine = fs.readFileSync('./mp3/kawai.opus')
-conn.sendFile(m.chat, helloaine, '', '', m, true)
+let hellomimim = fs.readFileSync('./mp3/kawai.opus')
+conn.sendFile(m.chat, hellomimim, '', '', m, true)
 }
 
 handler.customPrefix = /^(kawai|kawaii)$/i

@@ -6,8 +6,9 @@ handler.all = async function (m, { isBlocked }) {
     // ketika ada yang invite/kirim link grup di chat pribadi
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('Undangan untuk bergabung') || m.text.startsWith('Invitation to join') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
     let teks = `Invite Group
-• 15 Day / Rp 10k
-• 30 Day / Rp 15k
+• 1 Bulan / Rp 20k
+• 2 Bulan / Rp 40k
+• 3 Bulan / Rp 50k
 
 Jika berminat hubungi: @${global.owner[0]} untuk order:)
 `

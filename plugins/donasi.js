@@ -1,22 +1,14 @@
-let fetch = require('node-fetch')
-let handler = async (m, { conn, command, usedPrefix }) => {
-let pp = await conn.profilePictureUrl(m.chat).catch(_ => null)
-let pepe = pp ? await (await fetch(pp)).buffer() : Buffer.alloc(0)
-let str = ` ${conn.getName(m.sender)} Want Support Bot?
-
-*PAYMENT ↓*
-_*Pulsa/pulse(Tri):*_ 6289508902582
-
-_*Gopay:*_ 6289508902582
-_*Saweria:*_ https://saweria.co/OneTXz
-_*Trakteer:*_ https://trakteer.id/OneTXz
-Setelah melakukan donasi kirim bukti pembayaran ke owner
-`
-conn.sendHydrated(m.chat, str, wm, pepe, 'https://github.com/OneTXz/', 'GITHUB', null, null, [
-['MENU', '/menu']
-], m)
-
-}
+let handler = async m => m.reply(`
+╭─「 Donasi • Donate 」
+│ • Pulsa : [0878-48115476]
+│ • Pulsa 2  [0838-1644-6896]
+│ • Dana : [0878-48115476]
+│ • Ovo : [0878-48115476]
+│ • Gopay : [0878-48115476]
+│ • MotionPay : [0878-48115476]
+│ • Saweria : https://saweria.co/mimimproject
+╰────
+`.trim()) // Tambah sendiri kalo mau
 handler.help = ['donasi']
 handler.tags = ['info']
 handler.command = /^dona(te|si)$/i

@@ -5,7 +5,7 @@ module.exports = {
         if (!chats.expired) return !0
         if (+new Date() > chats.expired) {
         	const data = global.owner.filter(([id, isCreator]) => id && isCreator)
-            await m.reply(`It\'s time *${this.user.name}* to leave the group 👋`)
+            await m.reply(`Saatnya *${this.user.name}* untuk keluar dari grup 👋`)
             await this.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
             await this.delay(10000) 
             await this.groupLeave(m.chat)

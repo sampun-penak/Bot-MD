@@ -12,7 +12,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
 
   let anu = await fetch(`https://id.jagreward.com/member/verify-mobile/${nomor}`).then(a => a.json())
   
-  let spcall = `*Nomor Aine* : _${anu.phone_prefix}_\n\n_Aine berhasil menlpon anda!_`
+  let spcall = `*Nomor Mimim* : _${anu.phone_prefix}_\n\n_Mimim berhasil menelpon anda!_`
   
   conn.reply(anu)
   conn.reply(m.chat, `${spcall}`.trim(), m)

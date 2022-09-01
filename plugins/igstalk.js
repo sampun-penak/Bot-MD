@@ -87,7 +87,8 @@ Contoh: ${usedPrefix}${command} jokowi
 ▢ *Posting:* ${json.postsCount}
 ▢ *Link:* https://instagram.com/${json.username}
 ▢ *Bio:* ${json.bio}
-`.trim() // tambahin sendiri json.blablabla :)
+`.trim() 
+//tambahin sendiri json.blablabla :)
   conn.sendFile(m.chat, json.profilePicHD, 'error.jpg', iggs, m)
 }
 handler.help = ['igstalk <username>']
