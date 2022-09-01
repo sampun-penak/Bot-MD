@@ -1,7 +1,7 @@
 {
-    "name": "OneTXz-Bot",
-    "version": "07.06.98",
-    "description": "Customizable WhatsApp Bot",
+    "name": "TheBotz-Official",
+    "version": "26.04.03",
+    "description": "Official Bot WhatsApp",
     "depecrated": false,
     "main": "index.js",
     "directories": {
@@ -27,23 +27,24 @@
         "MD",
         "baileys-md"
     ],
-    "homepage": "https://github.com/OneTXz",
+    "homepage": "https://github.com/sampun-penak",
     "author": {
-        "name": "Reki Saputra"
+        "name": "Mimim Project"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/OneTXz"
+        "url": "git+https://github.com/sampun-penak"
     },
     "bugs": {
-        "url": "https://github.com/OneTXz"
+        "url": "https://github.com/sampun-penak"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
-        "@adiwajshing/baileys": "github:adiwajshing/baileys",
+        "@adiwajshing/baileys": "github:amiruldev20/baileys",
         "@adiwajshing/keyed-db": "^0.2.4",
-        "@bochilteam/scraper": "0.0.81",
+        "@bochilteam/scraper": "^2.0.0",
         "acrcloud": "^1.4.0",
+        "anonfile-lib": "^1.0.1",
         "async": "^3.2.3",
         "awesome-phonenumber": "^2.73.0",
         "axios": "^0.24.0",

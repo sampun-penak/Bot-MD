@@ -1,15 +1,18 @@
-# OneTXz-MD
+# anjay
 
 This script is free, if caught sold, this script will be deleted immediately.
 Don't forget to follow my github
 
 Script ini gratis, Jika ketahuan di jual, Script ini akan langsung di hapus.
 Jangan lupa untuk mengikuti github ku
-* My WhatsApp [`Click Here`](https://wa.me/6289508902582?text=Assalamualaikum)
-* My Instagram [`Click Here`](https://instagram.com/onetxz)
+* My WhatsApp [`Click Here`](https://wa.me/6283816446896?text=Assalamualaikum)
+* My Facebook [`Click Here`](https://facebook.com/mimim.project)
+
+## Viewer 👁️
+<p align="center"><img src="https://profile-counter.glitch.me/{Mimim}/count.svg" alt="neoxr :: Visitor's Count" /></p>
 
 ## Heroku Buildpack
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Aiinne/Aine-MD)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sampun-penak/anjay)
 
 | BuildPack | LINK |
 |--------|--------|
@@ -35,8 +38,8 @@ apt install git -y
 apt install nodejs -y
 apt install ffmpeg -y
 apt install imagemagick -y
-git clone https://github.com/OneTXz/OneTXz-MD
-cd OneTXz-Bot
+git clone https://github.com/sampun-penak/anjay
+cd anjay
 pkg install yarn
 yarn
 
@@ -66,14 +69,14 @@ apt install wget curl git ffmpeg imagemagick build-essential libcairo2-dev libpa
 
 ---------
 
-[ INSTALLING NODEJS & AINE-MD ]
+[ INSTALLING NODEJS & anjay ]
 
 ```bash
 ubuntu
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 apt install -y nodejs gcc g++ make
-git clone https://github.com/OneTXz/OneTXz-MD
-cd OneTXz-Bot
+git clone https://github.com/sampun-penak/anjay
+cd anjay
 npm install
 npm update
 ```
@@ -88,8 +91,8 @@ npm update
 * Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
 
 ```bash
-git clone https://github.com/OneTXz/OneTXz-Bot
-cd OneTXz-Bot
+git clone https://github.com/sampun-penak/anjay
+cd anjay
 npm install
 npm update
 ```
@@ -185,7 +188,7 @@ conn.logger.level = 'debug'
 
 ## Settings
 
-Now set using switch [enable.js](https://github.com/Aiinne/Aine-MD/blob/master/plugins/enable.js), among others are
+Now set using switch [enable.js](https://github.com/sampun-penak/anjay/blob/master/plugins/enable.js), among others are
 
 ```js
 autoread: false, // If true all chats are automatically read
@@ -206,6 +209,23 @@ Orang Tua,
 
 Semua yang selalu mendukung
 
+#### Special Thank's To
+[![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo)
+[![BochilGaming](https://github.com/BochilGaming.png?size=100)](https://github.com/BochilGaming)
+[![ariffb25](https://github.com/ariffb25.png?size=100)](https://github.com/ariffb25)
 
-Best Regards. OneTXz-Bot
+
+## Contributor
+
+[![Darrma23](https://github.com/Darrma23.png?size=100)](https://github.com/Darrma23)
+[![aniq12](https://github.com/aniq12.png?size=100)](https://github.com/aniq12)
+[![amiruldev20](https://github.com/amiruldev20.png?size=100)](https://github.com/amiruldev20)
+[![Chacax](https://github.com/Chacax.png?size=100)](https://github.com/Chacax)
+[![rahmad13](https://github.com/rahmad13.png?size=100)](https://github.com/rahmad13)
+[![Kangsad01](https://github.com/Kangsad01.png?size=100)](https://github.com/Kangsad01)
+[![Natx-C](https://github.com/Natx-C.png?size=100)](https://github.com/Natx-C)
+[![NurFy](https://github.com/NurFy.png?size=100)](https://github.com/NurFy)
+[![SudoAnirudh](https://github.com/SudoAnirudh.png?size=100)](https://github.com/SudoAnirudh)
+
+Best Regards. anjay
 
